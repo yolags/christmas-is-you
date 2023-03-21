@@ -1,0 +1,39 @@
+// Estilos página de terminos y condiciones
+@import "../utilities/variables";
+
+.terms{
+    margin-top: 25px;
+    @media screen and (min-width: 820px) and (max-width: 1180px) {
+        margin-top: 135px;
+    }
+    @media screen and (min-width: 1181px) {
+        margin-top: 120px;
+    }
+    .title-section {
+        position: relative;
+        text-align: center;
+        text-align: center;
+        padding-bottom: 100px;
+        margin-bottom: 30px;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-image: url(../../images/church.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .content{
+        width: 80%;
+        margin: 75px auto;
+        text-align: left;
+    }
+    .back {
+        margin-top: 35px;
+    }
+}

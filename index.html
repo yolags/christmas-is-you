@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <title>Christmas Is You</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="./assets/images/logo.png" alt="Christmas Is You"></a>
+            </div>
+            <ul class="navbar">
+                <li><a href="/index.html" class="option-menu active">Inicio</a></li>
+                <li><a href="nuestros-clientes/index.html" class="option-menu">Nuestros Clientes</a></li>
+                <li><a href="pide-tu-carta/index.html" class="option-menu">Pide tu Carta</a></li>
+                <li><a href="contacto/index.html" class="option-menu">Contacto</a></li>
+            </ul>
+            <!-- Este div solo se mostrará en dispositivos móviles, normalmente uso una clase maestra en tipo "only-mobile" o "only-desktop" para elementos que se muestran y/o ocultan en un tamaño u otro. -->
+            <div class="only-mobile control">
+                <div class="icon">
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <section class="banner-home">
+        <div class="banner">
+          <picture>
+            <source srcset="./assets/images/banner-movil.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/banner-desktop.jpg" alt="Christmas Is You">
+          </picture>
+        </div>
+      </section>
+
+      <section class="about_us" data-aos="fade-up" data-aos-duration="1500">
+        <div class="about_us_content">
+          <h2>¿Quiénes somos?</h2>
+          <div class="about-us_container">
+            <div class="cluster">
+              <img src="./assets/images/blog_christmas.png">
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur sunt odit, aut obcaecati facere quia voluptate quisquam a sed quibusdam recusandae eum non nihil ad tempora nobis saepe minima molestias omnis modi eveniet itaque adipisci cum ab. Error, voluptate officiis repellendus, animi a id veniam minus ad aliquid reprehenderit iure?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ready" data-aos="fade-up" data-aos-duration="1500">
+        <h2>¿Quieres una carta para tu peque?</h2>
+          <ul>
+            <li><i class="fa-solid fa-1"></i>Selecciona tu personaje</li>
+            <li><i class="fa-solid fa-2"></i>Completa los datos</li>
+            <li><i class="fa-solid fa-3"></i>Descarga tu carta</li>
+          </ul>  
+          <a href="/pide-tu-carta/" class="btns">Pide tu carta</a>        
+      </section>
+
+      <section class="our_clients" data-aos="fade-up" data-aos-duration="1500">
+        <div class="our_clients-content">
+          <h2>Nuestros clientes</h2>
+          <div class="image_customers">
+            <div class="client">
+              <img src="./assets/images/opt_santa.jpg">
+              <span>Santa Claus</span>
+            </div>
+            <div class="client">
+              <img src="./assets/images/opt_reyes.jpg">
+              <span>Reyes Magos</span>
+            </div>
+            <div class="client">
+              <img src="./assets/images/opt_olentzero.jpg">
+              <span>Olentzero</span>
+            </div>
+            <div class="client">
+              <img src="./assets/images/opt_cagatio.jpg">
+              <span>Cagatió</span>
+            </div>
+          </div>
+          <a href="/nuestros-clientes/" class="btns">Conócelos</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="top-info">
+            <div class="bloq-top">
+              <a href="index.html" class="logo-footer">
+                <img src="./assets/images/logo.png" alt="Christmas Is You">
+              </a>
+            </div>
+            <div class="bloq-top">
+              <ul>
+                <li><a href="./nuestros-clientes/index.html">Nuestros Clientes</a></li>
+                <li><a href="./pide-tu-carta/index.html">Pide tu Carta</a></li>
+                <li><a href="./contacto/index.html">Contacto</a></li>
+                <li><a href="./preguntas-frecuentes/index.html">Preguntas Frecuentes</a></li>
+                <li><a href="./terminos-y-condiciones/index.html">Términos y Condiciones</a></li>
+              </ul>
+            </div>
+            <div class="bloq-top">
+              <div class="rrss">
+                <p>Síguenos en:</p>
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; Christmas Is You 2022 - Todos los derechos reservados</p>
+        </div>
+    </div>
+    </footer>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>  
+</body>
+</html>

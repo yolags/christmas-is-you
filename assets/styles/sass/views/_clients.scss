@@ -1,0 +1,90 @@
+// Estilos página de clientes
+@import "../utilities/variables";
+
+.our-clients {
+    @media screen and (min-width: 820px) and (max-width: 1180px) {
+        margin-top: 135px;
+    }
+}
+.contenedor {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 65px;
+    .flex-container {
+        align-items: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 45px;
+        width: 100%;
+        @media screen and (min-width: 1181px) {
+            flex-direction: row;
+        }
+        @media screen and (min-width: 820px) and (max-width: 1180px) {
+           width: 45%;
+           margin: 0 auto;
+        }
+        .titulo-imagen {
+            width: 100%;
+            @media screen and (min-width: 1181px) {
+                width: 40%;
+            }
+            .titulo{
+                text-align: center;
+                color: $color-verde-1;
+                margin-bottom: 15px;
+            }
+            .contenedor-imagen{
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                .responsive-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .boton-texto{
+            width: 100%;
+            @media screen and (min-width: 1181px) {
+                width: 55%;
+            }
+            button {
+                border: solid 4px $color-rojo;
+                border-radius: 10px ;
+                background-color: $color-rojo;
+                align-items: center;
+                margin: 0 auto;
+                display:block;
+                color: $color-amarillo;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px 25px;
+                transition: $transitions;
+                &:hover {
+                    background-color: $color-dorado;
+                    color: $color-rojo;
+                    i {
+                        color: $color-rojo;
+                    }
+                }                
+                i {
+                    color: $color-amarillo;
+                }
+            }
+            .caja{
+                margin-top: 25px;
+                text-align: center;
+                color: $color-azul;
+                display: none;                
+            }
+        }
+    }  
+    
+ }
